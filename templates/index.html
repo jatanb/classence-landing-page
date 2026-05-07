@@ -4,7 +4,6 @@
         <title>Classence-AI</title>
         <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
         <link rel="icon",type="image/png" href="{{url_for('static',filename='img/logo.png')}}">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
@@ -86,7 +85,97 @@
         </div>
     </section>
 
-    
+    <section id="journey" class="teacher-flow">
+        <div class="flow-container">
+            <div class="section-tag" style="text-align:center;margin-bottom:80px;display:block">--Workflow--</div>
+            <h2 style="text-align:center;font-size:3.5rem;margin-bottom:80px;">The Teacher's Journey</h2>
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 01</div>
+                    <h3>Secure Login</h3>
+                    <p>
+                        Start your session with our high-security authentication portal.
+                    </p>
+
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static',filename='img/teacher.png')}}" alt="flow image">
+                </div>
+            </div>
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 02</div>
+                    <h3>Interactive Dashboard</h3>
+                    <p>
+                        Manage all your subjects, attendance logs, and student rosters from a single,beautiful unified stream.
+                    </p>
+
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static',filename='img/teacher_screen.png')}}" alt="flow image">
+                </div>
+            </div>
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 03</div>
+                    <h3>Course Management</h3>
+                    <p>
+                        Creating a new subject is very easy. Just name it, and classence generate generate everything you need to start tracking.
+                    </p>
+
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static',filename='img/create_subject.png')}}" alt="flow image">
+                </div>
+            </div>
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 04</div>
+                    <h3>FaceID Attendance</h3>
+                    <p>
+                        classence will scan the entire room.Our AI identifies every student from a single class photo in milliseconds.
+                    </p>
+
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static',filename='img/student_attendance.png')}}" alt="flow image">
+                </div>
+            </div>
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 05</div>
+                    <h3>Voice ID Attendance</h3>
+                    <p>
+                        Switch to voice mode for a futuristic roll-call.Students speak sequentialy, and AI match their unique voice signatures
+                    </p>
+
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static',filename='img/voice.png')}}" alt="flow image">
+                </div>
+            </div>
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 06</div>
+                    <h3>Acionable Records</h3>
+                    <p>
+                        Review and manage historical logs. View confidance scores, download CSV reports, and track long-term attendance trends.
+                    </p>
+
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static',filename='img/attendance_report.png')}}" alt="flow image">
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
 
@@ -135,100 +224,6 @@
             </div>
         </div>
     </section>
-
-
-
-    <section id="student-journey" class="teacher-flow">
-        <div class="flow-container">
-            <div class="section-tag" style="text-align:center;margin-bottom:80px;display:block">--Workflow--</div>
-            <h2 style="text-align:center;font-size:3.5rem;margin-bottom:80px;">The Teacher's Journey</h2>
-
-            <div class="flow-step">
-                <div class="flow-content">
-                    <div class="step-badge">STEP 01</div>
-                    <h3>Secure Login</h3>
-                    <p>
-                        Start your session with our high-security authentication portal
-                    </p>
-
-                </div>
-                <div class="flow-image">
-                    <img src="{{url_for('static',filename='img/Screenshot 2026-05-03 190141.png')}}" alt="flow image">
-                </div>
-            </div>
-
-            <div class="flow-step">
-                <div class="flow-content">
-                    <div class="step-badge">STEP 02</div>
-                    <h3>Interactive Dashboard</h3>
-                    <p>
-                        Manage all your subjects, attendance logs, and student rosters from a single,beautiful unified stream.
-                    </p>
-
-                </div>
-                <div class="flow-image">
-                    <img src="{{url_for('static',filename='img/teacher_screen.png')}}" alt="flow image">
-                </div>
-            </div>
-
-            <div class="flow-step">
-                <div class="flow-content">
-                    <div class="step-badge">STEP 03</div>
-                    <h3>Course Management</h3>
-                    <p>
-                        Creating a new subject is very easy. Just name it, and classence generate generate everything you need to start tracking.
-                    </p>
-
-                </div>
-                <div class="flow-image">
-                    <img src="{{url_for('static',filename='img/Screenshot 2026-05-03 190528.png')}}" alt="flow image">
-                </div>
-            </div>
-
-            <div class="flow-step">
-                <div class="flow-content">
-                    <div class="step-badge">STEP 04</div>
-                    <h3>FaceID Attendance</h3>
-                    <p>
-                        classence will scan the entire room.Our AI identifies every student from a single class photo in milliseconds.
-                    </p>
-
-                </div>
-                <div class="flow-image">
-                    <img src="{{url_for('static',filename='img/student_attendance.png')}}" alt="flow image">
-                </div>
-            </div>
-
-            <div class="flow-step">
-                <div class="flow-content">
-                    <div class="step-badge">STEP 05</div>
-                    <h3>Voice ID Attendance</h3>
-                    <p>
-                        Switch to voice mode for a futuristic roll-call.Students speak sequentialy, and AI match their unique voice signatures
-                    </p>
-
-                </div>
-                <div class="flow-image">
-                    <img src="{{url_for('static',filename='img/voice.png')}}" alt="flow image">
-                </div>
-            </div>
-
-            <div class="flow-step">
-                <div class="flow-content">
-                    <div class="step-badge">STEP 06</div>
-                    <h3>Acionable Records</h3>
-                    <p>
-                        Review and manage historical logs. View confidance scores, download CSV reports, and track long-term attendance trends.
-                    </p>
-
-                </div>
-                <div class="flow-image">
-                    <img src="{{url_for('static',filename='img/attendance_report.png')}}" alt="flow image">
-                </div>
-            </div>
-        </div>
-    </section>
-
 
 
 

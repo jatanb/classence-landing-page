@@ -1,0 +1,322 @@
+<html>
+    <head>
+
+        <title>Classence-AI</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+        <link rel="icon",type="image/png" href="{{url_for('static',filename='img/logo.png')}}">
+    </head>
+
+    <body>
+
+        <nav class="navbar">
+            <div class="logo">
+                <img src="{{url_for('static',filename='img/logo.png')}}" style="height:32px" alt="calssence logo">
+                <div class="logo-text">Classence</div>
+            </div>
+
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#features">Features</a>
+                <a href="#journey">Journey</a>
+                <a href="#tech">Tech Stack</a>
+            </div>
+
+            <div class="nav-cta">
+                <a href="https://classence-main.streamlit.app/" class="btn-pill">
+                    Start AI attendance
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z"></path></svg>
+                </a>
+            </div>
+            
+
+        </nav>
+
+        <header class="hero">
+            <div class="badge">
+                Welcome to Classence
+            </div>
+            <h1>AI Powered <br> Attendannce <span>System</span></h1>
+            <div class="hero-actions">
+                 <a href="https://classence-main.streamlit.app/" class="btn-pill">
+                    Start AI attendance
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z"></path></svg>
+                </a>
+
+                <a href="journey" class="link-action"></a>
+            </div>
+
+            <div class="floating-card card-left">
+                <div class="card-img">
+                    <img src="{{url_for('static',filename='img/student_attendance.png')}}" alt="landing img 1">
+                </div>
+            </div>
+            <div class="floating-card card-right">
+                <div class="card-img">
+                    <img src="{{url_for('static',filename='img/landing_page.png')}}" alt="landing img 1">
+                </div>
+            </div>
+        </header>
+    
+    <section id="features" class="features">
+        <h2>Innovative Features</h2>
+
+        <div class="features-grid">
+            <div class="features-card">
+                <div class="f-icon-card">📷</div>
+                <h3>AI Face Analysis</h3>
+                <p>
+                    Advanced facial recognition system that accurately detects and verifies students in real-time classroom environment.
+                </p>
+            </div>
+
+            <div class="features-card">
+                <div class="f-icon-card">🎤</div>
+                <h3>Seuential Voice ID</h3>
+                <p>
+                    Intelligent voice authentication that recognizes unique speech patterns for secure and seamless attendance.
+            </div>
+
+            <div class="features-card">
+                <div class="f-icon-card">📱</div>
+                <h3>QR-Driven Roster</h3>
+                <p>
+                    Smart QR-based subject management system for quick enrollment, attendance access, and classroom organization.
+            </div>
+        </div>
+    </section>
+
+    <section id="journey" class="teacher-flow">
+        <div class="flow-container">
+            <div class="section-tag" style="text-align:center;margin-bottom:80px;display:block">--Workflow--</div>
+            <h2 style="text-align:center;font-size:3.5rem;margin-bottom:80px;">The Teacher's Journey</h2>
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 01</div>
+                    <h3>Secure Login</h3>
+                    <p>
+                        Start your session with our high-security authentication portal
+                    </p>
+
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static',filename='img/Screenshot 2026-05-03 190141.png')}}" alt="flow image">
+                </div>
+            </div>
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 02</div>
+                    <h3>Interactive Dashboard</h3>
+                    <p>
+                        Manage all your subjects, attendance logs, and student rosters from a single,beautiful unified stream.
+                    </p>
+
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static',filename='img/teacher_screen.png')}}" alt="flow image">
+                </div>
+            </div>
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 03</div>
+                    <h3>Course Management</h3>
+                    <p>
+                        Creating a new subject is very easy. Just name it, and classence generate generate everything you need to start tracking.
+                    </p>
+
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static',filename='img/Screenshot 2026-05-03 190528.png')}}" alt="flow image">
+                </div>
+            </div>
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 04</div>
+                    <h3>FaceID Attendance</h3>
+                    <p>
+                        classence will scan the entire room.Our AI identifies every student from a single class photo in milliseconds.
+                    </p>
+
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static',filename='img/student_attendance.png')}}" alt="flow image">
+                </div>
+            </div>
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 05</div>
+                    <h3>Voice ID Attendance</h3>
+                    <p>
+                        Switch to voice mode for a futuristic roll-call.Students speak sequentialy, and AI match their unique voice signatures
+                    </p>
+
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static',filename='img/voice.png')}}" alt="flow image">
+                </div>
+            </div>
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 06</div>
+                    <h3>Acionable Records</h3>
+                    <p>
+                        Review and manage historical logs. View confidance scores, download CSV reports, and track long-term attendance trends.
+                    </p>
+
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static',filename='img/attendance_report.png')}}" alt="flow image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="tech" class="tech-stack">
+        <div class="section-tag">-- Our Backend --</div>
+        <h2>Advanceed Tech Stack</h2>
+
+        <div class="tech-grid">
+            <div class="tech-item">
+                <div class="tech-card">
+                    <div class="t-icon">⚡</div>
+                    <h4>Streamlit & Flask</h4>
+                    <p>clean frontend architecture eith Flask landing layer.</p>
+                
+                <span class="tech-tag">Platform</span>
+                </div>
+            </div>
+
+            <div class="tech-item">
+                <div class="tech-card">
+                    <div class="t-icon">👁️</div>
+                    <h4>Face Registration</h4>
+                    <p>use FaceRecognition & Dlib for facial biometrics</p>
+                
+                <span class="tech-tag">Platform</span>
+                </div>
+            </div>
+
+            <div class="tech-item">
+                <div class="tech-card">
+                    <div class="t-icon">🎤</div>
+                    <h4>Voice Embeddings</h4>
+                    <p>use resemblyzer and Librosa for unique student voice signatures</p>
+                
+                <span class="tech-tag">Platform</span>
+                </div>
+            </div>
+
+            <div class="tech-item">
+                <div class="tech-card">
+                    <div class="t-icon">☁️</div>
+                    <h4>Supabase Cloud</h4>
+                    <p>Real-time PostgreSQL infrastructure with secure auth and sync<p>
+                </div>
+                <span class="tech-tag">Storage</span>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+
+    <section class="purple-section">
+        <h2>Ready to your classroom</h2>
+        <p>Next-generation attendance system for smart classrooms.</p>
+
+        <a href="" class="btn-white">start AI attendenve now</a>
+        
+    </section>
+
+
+
+
+
+
+
+        <footer class="main-footer">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="{{url_for('static',filename='img/logo.png')}}" style="height:32px" alt="Classence Logo">
+                        <div clss="logo-text">Classence</div>
+                    </div>
+                    <p>
+                        join the advanced AI biometrics, future of education today.
+                    </p>
+                    </div>
+
+                    <div class="footer-links">
+                        <h4>Products</h4>
+                        <ul>
+                            <li>
+                                <a href="#features">AI Attendance</a>
+                            </li>
+                            <li>
+                                <a href="#features">Smart Roster</a>
+                            </li>
+                            <li>
+                                <a href="#tech">Tech Stack</a>
+                            </li>
+                            <li>
+                                <a href="#student-journey">Student Portal</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="footer-links">
+                        <h4>Experience</h4>
+                        <ul>
+                            <li>
+                                <a href="#journey">Teacher Journey</a>
+                            </li>
+                            <li>
+                                <a href="#student-journey">Student Journey</a>
+                            </li>
+                            <li>
+                                <a href="#features">Voice ID Roll-call</a>
+                            </li>
+                            <li>
+                                <a href="#features">Face ID Scan</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="footer-links">
+                        <h4>Company</h4>
+                        <ul>
+                            <li>
+                                <a href="#">About us</a>
+                            </li>
+                            <li>
+                                <a href="#features">How it works</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms of use</a>
+                            </li>
+                        </ul>
+                    </div>
+                
+            </div>
+
+            <div class="footer-bottom">
+                <p>2026 Clssence AI.built for educators</p>
+            </div>
+        </footer>
+
+    </body>
+</html>
